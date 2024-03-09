@@ -1,0 +1,48 @@
+//fonts
+
+@font-face {
+  font-family: "myriad";
+  src: url(../fonts/Myriad\ Arabic\ Italic.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.otf);
+}
+
+$font1: myriad, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+$font2: poppins, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #0da8dc;
+$color2: #bdd0d5;
+$black1: #2e2d2c;
+$white1: #fdfdfd;
+$grey1: #858685;
+$grey2: #f1f1f1;
+$text: #333;
+
+//general
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font2;
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+  color: $color1;
+}
