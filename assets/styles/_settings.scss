@@ -25,7 +25,8 @@ $white1: #fdfdfd;
 $grey1: #858685;
 $grey2: #f1f1f1;
 $text: #333;
-
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
 //general
 
 * {
@@ -37,6 +38,10 @@ $text: #333;
   color: $text;
 }
 
+body {
+  background: $white1;
+}
+
 h1,
 h2,
 h3,
@@ -45,4 +50,10 @@ h5,
 h6 {
   font-family: $font1;
   color: $color1;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
