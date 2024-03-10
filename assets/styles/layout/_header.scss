@@ -7,16 +7,17 @@ header {
     height: 15vh;
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow: 0 0 1px $blackShadow;
+    box-shadow: 1px 1px 1px $blackShadow;
     padding: 10px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 60% 20%;
     justify-content: center;
     align-items: center;
     position: relative;
 
     @media screen and (max-width: 770px) {
       grid-template-columns: 1fr;
+      // height: 100%;
     }
 
     a {
@@ -28,13 +29,10 @@ header {
         left: 20px;
         transform: translateY(-50%);
         width: 15%;
-        filter: drop-shadow(0px 0px 1px $blackShadow);
+        filter: drop-shadow(1px 1px 1px $blackShadow);
         transition: 0.2s;
 
         @media screen and (max-width: 770px) {
-          top: 50%;
-          left: 20px;
-          transform: translateY(-50%);
           width: 30%;
         }
       }
@@ -76,25 +74,30 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        transition: 0.2s;
 
         @media screen and (max-width: 770px) {
           display: none;
           display: flex;
           flex-direction: column;
           align-items: stretch;
+          border-radius: 20px;
+          background: $color1;
         }
 
         .liNav {
           list-style: none;
           padding: 5px;
-          text-align: center;
           transition: 0.2s;
           cursor: pointer;
 
           @media screen and (max-width: 770px) {
             padding: 10px 0;
             border-bottom: 1px solid $grey1;
+            text-align: center;
+
+            &:last-of-type {
+              border-radius: 20px;
+            }
           }
 
           a {
@@ -103,7 +106,8 @@ header {
           }
 
           &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
+
             @media screen and (max-width: 770px) {
               transform: none;
             }
@@ -119,7 +123,7 @@ header {
             display: none;
 
             ul {
-              width: 250px;
+              width: 230px;
 
               li {
                 position: relative;
@@ -141,16 +145,16 @@ header {
 
               ul {
                 display: block;
-                text-align: left;
-                margin: 10px 0;
-                background: $white1;
-                color: $text;
                 list-style: none;
+                margin: 10px 0;
+                text-align: left;
+                background: $white1;
                 border-top: 2px solid $color1;
+
                 @media screen and (max-width: 770px) {
-                  width: 100%;
                   text-align: center;
                   color: $color1;
+                  width: 80vw;
                 }
 
                 li {
@@ -159,21 +163,27 @@ header {
                   border-bottom: 1px solid rgba(241, 241, 241, 0.8);
                   font-size: 0.8rem;
 
-                  @media screen and (max-width: 770px) {
-                    width: 83vw;
-                    margin: 0 auto;
-                  }
-
                   &:hover {
-                    color: $white1;
-                    background: $text;
+                    background: $color1;
                     transform: none;
+
+                    a {
+                      color: $white1;
+                    }
                   }
                 }
               }
             }
           }
         }
+      }
+    }
+
+    #button-call {
+      text-align: center;
+
+      @media screen and (max-width: 770px) {
+        display: none;
       }
     }
   }

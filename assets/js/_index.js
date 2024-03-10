@@ -11,15 +11,16 @@ const openIcon = document.querySelector("#open-icon");
 const closeIcon = document.querySelector("#close-icon");
 const navList = document.querySelector(".menuNav");
 const navListLi = navList.querySelector(".liNav");
-
 function openNav() {
   openIcon.style.display = "none";
   closeIcon.style.display = "block";
   navList.style.display = "block";
+  navList.style.margin = "120px 0 0 0";
 }
 
 function closeNav() {
   closeIcon.style.display = "none";
   openIcon.style.display = "block";
   navList.style.display = "none";
+  logo.style.position = "absolute";
 }

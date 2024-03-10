@@ -48,11 +48,11 @@ header nav {
   height: 15vh;
   margin: 0 auto;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   padding: 10px;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 60% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -76,17 +76,13 @@ header nav a img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 15%;
-  -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 @media screen and (max-width: 770px) {
   header nav a img {
-    top: 50%;
-    left: 20px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
     width: 30%;
   }
 }
@@ -128,8 +124,6 @@ header nav .menuNav .NavListLi {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 @media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi {
@@ -144,12 +138,13 @@ header nav .menuNav .NavListLi {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    border-radius: 20px;
+    background: #0da8dc;
   }
 }
 header nav .menuNav .NavListLi .liNav {
   list-style: none;
   padding: 5px;
-  text-align: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
@@ -158,6 +153,10 @@ header nav .menuNav .NavListLi .liNav {
   header nav .menuNav .NavListLi .liNav {
     padding: 10px 0;
     border-bottom: 1px solid #858685;
+    text-align: center;
+  }
+  header nav .menuNav .NavListLi .liNav:last-of-type {
+    border-radius: 20px;
   }
 }
 header nav .menuNav .NavListLi .liNav a {
@@ -165,8 +164,8 @@ header nav .menuNav .NavListLi .liNav a {
   text-decoration: none;
 }
 header nav .menuNav .NavListLi .liNav:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi .liNav:hover {
@@ -181,7 +180,7 @@ header nav .menuNav .NavListLi #menuServices .menuServicesNav {
   display: none;
 }
 header nav .menuNav .NavListLi #menuServices .menuServicesNav ul {
-  width: 250px;
+  width: 230px;
 }
 header nav .menuNav .NavListLi #menuServices .menuServicesNav ul li {
   position: relative;
@@ -199,18 +198,17 @@ header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav {
 }
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
   display: block;
-  text-align: left;
-  margin: 10px 0;
-  background: #fdfdfd;
-  color: #333;
   list-style: none;
+  margin: 10px 0;
+  text-align: left;
+  background: #fdfdfd;
   border-top: 2px solid #0da8dc;
 }
 @media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
-    width: 100%;
     text-align: center;
     color: #0da8dc;
+    width: 80vw;
   }
 }
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
@@ -219,15 +217,53 @@ header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
   border-bottom: 1px solid rgba(241, 241, 241, 0.8);
   font-size: 0.8rem;
 }
-@media screen and (max-width: 770px) {
-  header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
-    width: 83vw;
-    margin: 0 auto;
-  }
-}
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:hover {
-  color: #fdfdfd;
-  background: #333;
+  background: #0da8dc;
   -webkit-transform: none;
           transform: none;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:hover a {
+  color: #fdfdfd;
+}
+header nav #button-call {
+  text-align: center;
+}
+@media screen and (max-width: 770px) {
+  header nav #button-call {
+    display: none;
+  }
+}
+
+button {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid #0da8dc;
+  border-radius: 150px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover {
+  background: #fdfdfd;
+  border: 2px solid #fdfdfd;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+button:hover a {
+  color: #0da8dc;
+}
+button a {
+  text-decoration: none;
+  color: #0da8dc;
+}
+
+.buttonWhite {
+  border: 2px solid #fdfdfd;
+}
+.buttonWhite a {
+  color: #fdfdfd;
 }/*# sourceMappingURL=index.css.map */
