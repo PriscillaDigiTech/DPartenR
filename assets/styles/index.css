@@ -115,6 +115,11 @@ header nav .menu-icons #open-icon {
 header nav .menu-icons #close-icon {
   display: none;
 }
+@media screen and (max-width: 770px) {
+  header nav .menuNav {
+    margin-top: 130px;
+  }
+}
 header nav .menuNav .NavListLi {
   display: -webkit-box;
   display: -ms-flexbox;

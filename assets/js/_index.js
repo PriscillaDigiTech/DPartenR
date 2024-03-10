@@ -15,7 +15,6 @@ function openNav() {
   openIcon.style.display = "none";
   closeIcon.style.display = "block";
   navList.style.display = "block";
-  navList.style.margin = "120px 0 0 0";
 }
 
 function closeNav() {
