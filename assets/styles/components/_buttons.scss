@@ -4,17 +4,17 @@ button {
   border: 2px solid $color1;
   border-radius: 150px;
   box-shadow: 1px 1px 1px $blackShadow;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.2s;
 
   &:hover {
-    background: $white1;
-    border: 2px solid $white1;
+    background: $color1;
     box-shadow: 1px 1px 10px $blackShadow;
     transform: scale(1.1);
 
     a {
-      color: $color1;
+      color: $white1;
     }
   }
 
@@ -26,6 +26,14 @@ button {
 
 .buttonWhite {
   border: 2px solid $white1;
+
+  &:hover {
+    background: $white1;
+
+    a {
+      color: $color1;
+    }
+  }
   a {
     color: $white1;
   }

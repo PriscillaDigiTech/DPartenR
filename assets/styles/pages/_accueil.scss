@@ -1,0 +1,34 @@
+.hero {
+  background: url(../img/bg-hero.png) center/cover;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 100px 50px;
+  margin: 10px auto 50px;
+  text-align: left;
+
+  @media screen and (max-width: 770px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    div {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  p {
+    color: $white1;
+    padding-bottom: 30px;
+  }
+}
+
+.about {
+  p {
+    padding-bottom: 30px;
+  }
+}
