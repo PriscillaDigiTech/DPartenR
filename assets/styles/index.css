@@ -376,4 +376,26 @@ section {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+.services .services-container a div i {
+  padding: 30px;
+  font-size: 1.8rem;
+  color: #0da8dc;
+}
+
+.contact {
+  background: url(../img/2.PNG) center/cover;
+  padding: 0;
+}
+.contact .overlay {
+  background: rgba(13, 168, 220, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+.contact .overlay h2 {
+  color: #fdfdfd;
+}
+.contact .overlay p {
+  color: #f1f1f1;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
