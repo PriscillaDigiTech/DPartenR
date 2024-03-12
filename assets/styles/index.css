@@ -52,6 +52,12 @@ h3 {
   padding-bottom: 20px;
 }
 
+h4 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
 header {
   padding: 50px 0;
 }
@@ -254,6 +260,88 @@ header nav #button-call {
   }
 }
 
+footer {
+  width: 85%;
+  margin: 50px auto;
+  padding: 20px 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border: 2px solid #0da8dc;
+}
+footer li {
+  list-style: none;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #0da8dc;
+}
+footer a {
+  text-decoration: none;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .footer-container img {
+  width: 80%;
+  padding: 10px;
+}
+footer .footer-container ul li {
+  padding-bottom: 10px;
+}
+footer .footer-container ul li a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-container ul li a:hover {
+  color: #0da8dc;
+}
+footer .copyright {
+  border-top: 1px solid rgba(13, 168, 220, 0.7);
+  display: grid;
+  grid-template-columns: 80% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+footer .copyright p a {
+  color: #0da8dc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .copyright p a:hover {
+  color: #2e2d2c;
+}
+footer .copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .copyright ul li {
+  font-size: 1.8rem;
+}
+footer .copyright ul li a i {
+  color: #0da8dc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .copyright ul li a i:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: #2e2d2c;
+}
+
 button {
   background: transparent;
   padding: 5px 20px;
@@ -329,7 +417,7 @@ section {
 }
 
 .about {
-  border: 1px solid #0da8dc;
+  border: 2px solid #0da8dc;
 }
 .about p {
   padding-bottom: 30px;
