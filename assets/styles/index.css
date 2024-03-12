@@ -260,6 +260,22 @@ header nav #button-call {
   }
 }
 
+.title-page {
+  background: url(../img/bg-hero.png) center/cover;
+  padding: 0;
+}
+.title-page .overlay {
+  background: rgba(13, 168, 220, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+.title-page .overlay h1 {
+  padding-bottom: 30px;
+}
+.title-page .overlay p {
+  color: #fdfdfd;
+}
+
 footer {
   width: 85%;
   margin: 50px auto;
@@ -432,9 +448,6 @@ section {
   color: #fdfdfd;
   padding-bottom: 30px;
 }
-#accueil .about {
-  border: 2px solid #0da8dc;
-}
 #accueil .about p {
   padding-bottom: 30px;
 }
@@ -504,6 +517,126 @@ section {
   color: #fdfdfd;
 }
 #accueil .contact .overlay p {
+  color: #f1f1f1;
+  padding-bottom: 30px;
+}
+
+#a-propos .missionValeurs {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media screen and (max-width: 800px) {
+  #a-propos .missionValeurs {
+    grid-template-columns: 1fr;
+  }
+}
+#a-propos .missionValeurs div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: url(../img/logistic.png) center/cover;
+}
+#a-propos .missionValeurs div .overlay {
+  background: #0da8dc;
+  padding: 50px;
+  border-radius: 20px;
+  height: 100%;
+}
+#a-propos .missionValeurs div .overlay i {
+  color: #fdfdfd;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border: 2px solid #fdfdfd;
+  padding: 20px;
+  border-radius: 150px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#a-propos .missionValeurs div .overlay h2 {
+  color: #fdfdfd;
+}
+#a-propos .missionValeurs div .overlay p {
+  color: #fdfdfd;
+}
+#a-propos .contact {
+  background: url(../img/services.png) center/cover;
+  padding: 0;
+}
+#a-propos .contact .overlay {
+  background: rgba(13, 168, 220, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+#a-propos .contact .overlay h2 {
+  color: #fdfdfd;
+}
+#a-propos .contact .overlay p {
+  color: #f1f1f1;
+  padding-bottom: 30px;
+}
+
+#services .services {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#services .services .overlay {
+  border-radius: 20px;
+}
+#services .services .overlay .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media screen and (max-width: 1170px) {
+  #services .services .overlay .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+#services .services .overlay .services-container a {
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+}
+#services .services .overlay .services-container a div {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 100%;
+  padding: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#services .services .overlay .services-container a div:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+#services .services .overlay .services-container a div i {
+  padding: 30px;
+  font-size: 1.8rem;
+  color: #0da8dc;
+}
+#services .contact {
+  background: url(../img/services.png) center/cover;
+  padding: 0;
+}
+#services .contact .overlay {
+  background: rgba(13, 168, 220, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+#services .contact .overlay h2 {
+  color: #fdfdfd;
+}
+#services .contact .overlay p {
   color: #f1f1f1;
   padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
