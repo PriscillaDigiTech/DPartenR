@@ -1,109 +1,111 @@
-.hero {
-  background: url(../img/bg-hero.png) center/cover;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  padding: 100px 50px;
-  margin: 10px auto 50px;
-  text-align: left;
+#accueil {
+  .hero {
+    background: url(../img/bg-hero.png) center/cover;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 100px 50px;
+    margin: 10px auto 50px;
+    text-align: left;
 
-  @media screen and (max-width: 770px) {
-    grid-template-columns: 1fr;
-    text-align: center;
+    @media screen and (max-width: 770px) {
+      grid-template-columns: 1fr;
+      text-align: center;
 
-    div {
-      &:last-of-type {
-        display: none;
+      div {
+        &:last-of-type {
+          display: none;
+        }
       }
     }
-  }
 
-  h1 {
-    padding-bottom: 30px;
-  }
+    h1 {
+      padding-bottom: 30px;
+    }
 
-  p {
-    color: $white1;
-    padding-bottom: 30px;
-  }
-}
-
-.about {
-  border: 2px solid $color1;
-  p {
-    padding-bottom: 30px;
-  }
-}
-
-.services {
-  background: url(../img/logistic.png) center/cover;
-  padding: 0;
-
-  .overlay {
-    background: $overlay1;
-    padding: 50px;
-    border-radius: 20px;
-    h2 {
+    p {
       color: $white1;
+      padding-bottom: 30px;
     }
+  }
 
-    .services-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 10px;
+  .about {
+    border: 2px solid $color1;
+    p {
+      padding-bottom: 30px;
+    }
+  }
 
-      @media screen and (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr;
+  .services {
+    background: url(../img/logistic.png) center/cover;
+    padding: 0;
+
+    .overlay {
+      background: $overlay1;
+      padding: 50px;
+      border-radius: 20px;
+      h2 {
+        color: $white1;
       }
 
-      @media screen and (max-width: 1170px) {
-        grid-template-columns: 1fr;
-      }
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
 
-      a {
-        text-decoration: none;
-        height: 100%;
-        cursor: pointer;
+        @media screen and (max-width: 1300px) {
+          grid-template-columns: 1fr 1fr;
+        }
 
-        div {
-          box-shadow: 0px 0px 5px $blackShadow;
-          border-radius: 20px;
+        @media screen and (max-width: 1170px) {
+          grid-template-columns: 1fr;
+        }
+
+        a {
+          text-decoration: none;
           height: 100%;
-          padding: 20px;
-          background: $white1;
-          transition: 0.2s;
+          cursor: pointer;
 
-          &:hover {
-            box-shadow: 0px 0px 10px $blackShadow;
-            transform: scale(1.02);
-          }
+          div {
+            box-shadow: 0px 0px 5px $blackShadow;
+            border-radius: 20px;
+            height: 100%;
+            padding: 20px;
+            background: $white1;
+            transition: 0.2s;
 
-          i {
-            padding: 30px;
-            font-size: 1.8rem;
-            color: $color1;
+            &:hover {
+              box-shadow: 0px 0px 10px $blackShadow;
+              transform: scale(1.02);
+            }
+
+            i {
+              padding: 30px;
+              font-size: 1.8rem;
+              color: $color1;
+            }
           }
         }
       }
     }
   }
-}
 
-.contact {
-  background: url(../img/services.png) center/cover;
-  padding: 0;
+  .contact {
+    background: url(../img/services.png) center/cover;
+    padding: 0;
 
-  .overlay {
-    background: $overlay1;
-    padding: 50px;
-    border-radius: 20px;
+    .overlay {
+      background: $overlay1;
+      padding: 50px;
+      border-radius: 20px;
 
-    h2 {
-      color: $white1;
-    }
+      h2 {
+        color: $white1;
+      }
 
-    p {
-      color: $grey2;
-      padding-bottom: 30px;
+      p {
+        color: $grey2;
+        padding-bottom: 30px;
+      }
     }
   }
 }
