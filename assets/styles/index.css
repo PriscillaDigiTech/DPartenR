@@ -375,6 +375,23 @@ footer .copyright ul li a i:hover {
   color: #2e2d2c;
 }
 
+.contact {
+  background: url(../img/services.png) center/cover;
+  padding: 0;
+}
+.contact .overlay {
+  background: rgba(13, 168, 220, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+.contact .overlay h2 {
+  color: #fdfdfd;
+}
+.contact .overlay p {
+  color: #f1f1f1;
+  padding-bottom: 30px;
+}
+
 button {
   background: transparent;
   padding: 5px 20px;
@@ -504,23 +521,10 @@ section {
   font-size: 1.8rem;
   color: #0da8dc;
 }
-#accueil .contact {
-  background: url(../img/services.png) center/cover;
-  padding: 0;
-}
-#accueil .contact .overlay {
-  background: rgba(13, 168, 220, 0.7);
-  padding: 50px;
-  border-radius: 20px;
-}
-#accueil .contact .overlay h2 {
-  color: #fdfdfd;
-}
-#accueil .contact .overlay p {
-  color: #f1f1f1;
-  padding-bottom: 30px;
-}
 
+#a-propos h1 {
+  text-transform: uppercase;
+}
 #a-propos .missionValeurs {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -564,23 +568,10 @@ section {
 #a-propos .missionValeurs div .overlay p {
   color: #fdfdfd;
 }
-#a-propos .contact {
-  background: url(../img/services.png) center/cover;
-  padding: 0;
-}
-#a-propos .contact .overlay {
-  background: rgba(13, 168, 220, 0.7);
-  padding: 50px;
-  border-radius: 20px;
-}
-#a-propos .contact .overlay h2 {
-  color: #fdfdfd;
-}
-#a-propos .contact .overlay p {
-  color: #f1f1f1;
-  padding-bottom: 30px;
-}
 
+#services h1 {
+  text-transform: uppercase;
+}
 #services .services {
   padding: 0;
   -webkit-box-shadow: none;
@@ -624,19 +615,116 @@ section {
   font-size: 1.8rem;
   color: #0da8dc;
 }
-#services .contact {
-  background: url(../img/services.png) center/cover;
-  padding: 0;
+
+.sous-services h1 {
+  text-transform: uppercase;
 }
-#services .contact .overlay {
-  background: rgba(13, 168, 220, 0.7);
-  padding: 50px;
+.sous-services .services {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.sous-services .services .overlay {
   border-radius: 20px;
 }
-#services .contact .overlay h2 {
-  color: #fdfdfd;
+.sous-services .services .overlay .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
-#services .contact .overlay p {
-  color: #f1f1f1;
-  padding-bottom: 30px;
+@media screen and (max-width: 1170px) {
+  .sous-services .services .overlay .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+.sous-services .services .overlay .services-container div {
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 100%;
+  padding: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#ordre-transport .services-container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1170px) {
+  #ordre-transport .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+#nous-contacter h1 {
+  text-transform: uppercase;
+}
+#nous-contacter .contact-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0;
+  gap: 30px;
+}
+@media screen and (max-width: 930px) {
+  #nous-contacter .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+#nous-contacter .contact-container .left,
+#nous-contacter .contact-container .right {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+#nous-contacter .contact-container .left div {
+  margin: 20px auto;
+  padding: 30px;
+}
+#nous-contacter .contact-container .left div a {
+  color: #333;
+  text-decoration: none;
+}
+#nous-contacter .contact-container .left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#nous-contacter .contact-container .left ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+#nous-contacter .contact-container .right form label {
+  display: block;
+  padding: 10px;
+}
+#nous-contacter .contact-container .right form input {
+  background: transparent;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #858685;
+}
+#nous-contacter .contact-container .right form textarea {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+#nous-contacter .contact-container .right form button {
+  color: #0da8dc;
+}
+#nous-contacter .contact-container .right form button:hover {
+  color: #fdfdfd;
 }/*# sourceMappingURL=index.css.map */

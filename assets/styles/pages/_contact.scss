@@ -1,0 +1,78 @@
+#nous-contacter {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .contact-container {
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+    gap: 30px;
+
+    @media screen and (max-width: 930px) {
+      grid-template-columns: 1fr;
+    }
+
+    .left,
+    .right {
+      box-shadow: 0 0 5px $blackShadow;
+      padding: 50px 20px;
+      border-radius: 20px;
+    }
+    .left {
+      div {
+        margin: 20px auto;
+        padding: 30px;
+
+        a {
+          color: $text;
+          text-decoration: none;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+          list-style: none;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .right {
+      form {
+        label {
+          display: block;
+          padding: 10px;
+        }
+        input {
+          background: transparent;
+          display: block;
+          width: 80%;
+          margin: 20px auto;
+          // padding: 10px 0;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          border-bottom: 1px solid $grey1;
+        }
+
+        textarea {
+          display: block;
+          width: 80%;
+          margin: 20px auto;
+        }
+
+        button {
+          color: $color1;
+
+          &:hover {
+            color: $white1;
+          }
+        }
+      }
+    }
+  }
+}
