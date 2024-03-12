@@ -681,8 +681,8 @@ section {
   border-radius: 20px;
 }
 #nous-contacter .contact-container .left div {
-  margin: 20px auto;
   padding: 30px;
+  border-bottom: 1px solid #f1f1f1;
 }
 #nous-contacter .contact-container .left div a {
   color: #333;
@@ -702,9 +702,18 @@ section {
 #nous-contacter .contact-container .left ul li {
   list-style: none;
   font-size: 1.8rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#nous-contacter .contact-container .left ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#nous-contacter .contact-container .left ul li:hover a {
+  color: #0da8dc;
 }
 #nous-contacter .contact-container .right form label {
-  display: block;
+  width: 100%;
   padding: 10px;
 }
 #nous-contacter .contact-container .right form input {
@@ -716,11 +725,23 @@ section {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #858685;
+  outline: none;
+}
+#nous-contacter .contact-container .right form input:hover, #nous-contacter .contact-container .right form input:focus, #nous-contacter .contact-container .right form input:active {
+  border-bottom: 1px solid #0da8dc;
 }
 #nous-contacter .contact-container .right form textarea {
   display: block;
   width: 80%;
   margin: 20px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #858685;
+  outline: none;
+  background: transparent;
+}
+#nous-contacter .contact-container .right form textarea:hover, #nous-contacter .contact-container .right form textarea:focus, #nous-contacter .contact-container .right form textarea:active {
+  border: 1px solid #0da8dc;
 }
 #nous-contacter .contact-container .right form button {
   color: #0da8dc;

@@ -22,8 +22,8 @@
     }
     .left {
       div {
-        margin: 20px auto;
         padding: 30px;
+        border-bottom: 1px solid $grey2;
 
         a {
           color: $text;
@@ -37,6 +37,15 @@
         li {
           list-style: none;
           font-size: 1.8rem;
+          transition: 0.2s;
+
+          &:hover {
+            transform: scale(1.2);
+
+            a {
+              color: $color1;
+            }
+          }
         }
       }
     }
@@ -44,7 +53,7 @@
     .right {
       form {
         label {
-          display: block;
+          width: 100%;
           padding: 10px;
         }
         input {
@@ -52,17 +61,34 @@
           display: block;
           width: 80%;
           margin: 20px auto;
-          // padding: 10px 0;
           border-top: none;
           border-right: none;
           border-left: none;
           border-bottom: 1px solid $grey1;
+          outline: none;
+
+          &:hover,
+          &:focus,
+          &:active {
+            border-bottom: 1px solid $color1;
+          }
         }
 
         textarea {
           display: block;
           width: 80%;
           margin: 20px auto;
+          padding: 10px;
+          border-radius: 20px;
+          border: 1px solid $grey1;
+          outline: none;
+          background: transparent;
+
+          &:hover,
+          &:focus,
+          &:active {
+            border: 1px solid $color1;
+          }
         }
 
         button {
