@@ -22,5 +22,4 @@ function closeNav() {
   closeIcon.style.display = "none";
   openIcon.style.display = "block";
   navList.style.display = "none";
-  logo.style.position = "absolute";
 }
