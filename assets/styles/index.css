@@ -769,4 +769,8 @@ section {
 }
 #nous-contacter .contact-container .right form button:hover {
   color: #fdfdfd;
+}
+
+.legal h2 {
+  margin-top: 30px;
 }/*# sourceMappingURL=index.css.map */
