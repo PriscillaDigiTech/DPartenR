@@ -636,6 +636,9 @@ section {
   font-size: 1.8rem;
   color: #0da8dc;
 }
+#services .services .overlay .services-container a div p {
+  text-align: justify;
+}
 
 .sous-services h1 {
   text-transform: uppercase;
@@ -667,6 +670,9 @@ section {
   padding: 30px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+.sous-services .services .overlay .services-container div p {
+  text-align: justify;
 }
 
 #ordre-transport .services-container {
