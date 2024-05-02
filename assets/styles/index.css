@@ -632,7 +632,7 @@ section {
           transform: scale(1.02);
 }
 #services .services .overlay .services-container a div i {
-  padding: 30px;
+  padding-bottom: 30px;
   font-size: 1.8rem;
   color: #0da8dc;
 }
@@ -666,10 +666,14 @@ section {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  height: 100%;
   padding: 30px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+.sous-services .services .overlay .services-container div i {
+  padding-bottom: 30px;
+  font-size: 1.8rem;
+  color: #0da8dc;
 }
 .sous-services .services .overlay .services-container div p {
   text-align: justify;
@@ -682,6 +686,20 @@ section {
   #ordre-transport .services-container {
     grid-template-columns: 1fr;
   }
+}
+
+#rh .services-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "se1 se2" "re re" "se3 se4";
+}
+@media screen and (max-width: 1170px) {
+  #rh .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+#rh .services-container #recrutement {
+  grid-area: re;
 }
 
 #nous-contacter h1 {
